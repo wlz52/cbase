@@ -5,7 +5,7 @@
 #define CBASE_CONSTS_H
 
 #include <string>
-#include <algorithm>
+#include "global.h"
 
 namespace cbase
 {
@@ -17,7 +17,7 @@ namespace cbase
         constexpr static double kEps = 0.000000001;
 
         // Path separator.
-#ifdef WINDOWS
+#ifdef CB_WINDOWS
         constexpr static char kPathSeparator = '\\';
 #else
         constexpr static char kPathSeparator = '/';
